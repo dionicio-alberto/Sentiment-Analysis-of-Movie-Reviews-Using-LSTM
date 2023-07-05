@@ -1,0 +1,14 @@
+name: neural-network
+channels:
+  - defaults
+dependencies:
+  - python=3.11.3
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - keras
+  - tensorflow
+  - ipython 
