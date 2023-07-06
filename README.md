@@ -1,12 +1,12 @@
-<h1 align="center"> CNN's </h1> <br>
+<h1 align="center"> LSTM </h1> <br>
 <p align="center">
   <!--<a href="https://gitpoint.co/"> -->
-    <img alt="Init" title="Presentation" src="https://i.imgur.com/FlVfwAA.png" width="450">
+    <img alt="Init" title="Presentation" src="https://miro.medium.com/v2/resize:fit:504/1*FPTmBD8GY9ZvkdsUBYXC9Q.png" width="450">
   </a>
 </p>
 
 <p align="center">
-  Image Classification Using CNNs: Cats vs Dogs
+  Sentiment Analysis of Movie Reviews Using LSTM
 </p>
 
 <!-- 
@@ -43,14 +43,18 @@
 
 ## Introduction
 
-Computer vision is an engineering discipline focused on developing software that can derive significance from visual data. As per a popular anecdote, computer vision's origins can be traced back to the 1960s when Professor Marvin Minsky of MIT tasked a team of undergraduate students with an intriguing summer project. The challenge presented to them was to affix a camera to a computer and enable the computer to articulate its observations of the surroundings.
+Nutural lenguage processing is a subfield in artificial intelligence that is concerned with the interaction of computers and human lenguages.
 
-In this repository we've created a Convolutional Neural Network to identify Cats or Dogs. Here, we created two models, the first model was created from 0, using Keras librery. In the second model, we created a pre-trained model using transfer learning from VGC16 model
+With the proliferation of deep learning and neural networks in the image classification domian, scientists began to wonder whether the powers of neural networks could be applied to NLP.
+
+Sentiment analysis is also an area of NLP that benefited from the resurgence of deep learning. Sentiment analysis is defined as the prediction of the positivity of a text. Most sentiment analysis problems are classification problems (positive/neutral/negative) and not regression problems.
+
+In this repository we've created a Long Short-Term Memory neural network for Sentiment Analysis of movies reviews from IMDb 
 
 **All project is in the folder *Notebook*.**
 
 <p align="center">
-  <img src = "https://i.imgur.com/nPgxtAq.jpeg", width="600">
+  <img src = "https://www.panoramaaudiovisual.com/wp-content/uploads/2019/06/IMDB.jpg", width="600">
 </p>
 
 -----
@@ -59,14 +63,20 @@ In this repository we've created a Convolutional Neural Network to identify Cats
 
 Principal's model feactures:
 
-- 2 models trained
-- ~80 % and ~90% accuracity
-- Model 1: 2 convolutional-max pooling layers, followed by two fully connected layers.
-- Model 2: transfer learning to leverage on the pretrained VGG16 network for our classification
+- LSTM Nerual Network
+- IMDb sentimental analysis
+- Word Embeding layer
+- LSTM layer with 256 units
+- Dense layer with sigmoid function activation
+- 3 optimizers proved:
+  1. SGD
+  2. RMSprop
+  3. Adam
+- ~90% acuracuty
 
 
 <p align="center">
-  <img src = "https://i.imgur.com/M5jDRmf.png" width=400>
+  <img src = "https://i.imgur.com/UUmoqh3.png" width=400>
 </p>
 
 > Model schematic
@@ -74,7 +84,7 @@ Principal's model feactures:
 
 ## Feedback
 
-Feel free to send us feedback on [Twitter](https://twitter.com/dionicio_98) or [file an issue](https://github.com/dionicio-alberto/Predicting-Diabetes-with-Neural-Networks/issues/new). Feature requests are always welcome. If you wish to contribute, please take a quick look at the [guidelines](./CONTRIBUTING.md)!
+Feel free to send us feedback on [Twitter](https://twitter.com/dionicio_98) or [file an issue](https://github.com/dionicio-alberto/Sentiment-Analysis-of-Movie-Reviews-Using-LSTM/issues/new). Feature requests are always welcome. If you wish to contribute, please take a quick look at the [guidelines](./CONTRIBUTING.md)!
 
 <!-- If there's anything you'd like to chat about, please feel free to join our [Gitter chat](https://gitter.im/git-point)! -->
 
@@ -92,16 +102,17 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 - Follow the guide in the book [Nerual Network Projects with Python](https://www.amazon.com/Neural-Network-Projects-Python-ultimate/dp/1789138906) for getting started building a project with native code.
 - Use the follows libreries:
   - Numpy
-  - Pandas
   - Matplotlib
   - Seaborn
   - Keras
-  - Scikit-learn
+  - TensorFlow
 - Data Analysis and Exploration
 - Data Preprocessing
 - Modeling Neural Network
 - Training Neural Network
 - Evaluating Neural
+
+For Model Training use Google Colab Resources.
 
 Please take a look at the [contributing guidelines](./CONTRIBUTING.md) for a detailed about the results
 
@@ -109,9 +120,9 @@ Please take a look at the [contributing guidelines](./CONTRIBUTING.md) for a det
 
 ## Results Analysis
 
-The models make strongly right predictions
+The models with RMSprop has the best accuracy.
 
-![results](https://i.imgur.com/ZGFRdIc.png)
+![results](https://i.imgur.com/9T1AHXP.png)
 
 <!--  ## Backers [![Backers on Open Collective](https://opencollective.com/git-point/backers/badge.svg)](#backers)
 
